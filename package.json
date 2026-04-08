@@ -1,0 +1,12 @@
+{
+  "name": "smart-video-downloader",
+  "version": "1.0.0",
+  "description": "Chrome Extension to detect and download video files.",
+  "scripts": {
+    "run:chrome": "open -a 'Google Chrome' --args --load-extension=\"$(pwd)\"",
+    "test-page": "open https://www.w3schools.com/html/html5_video.asp"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
