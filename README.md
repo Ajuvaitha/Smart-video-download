@@ -1,31 +1,126 @@
-# Smart Video Downloader
+# 🎬 Smart Video Downloader Chrome Extension
 
-A Chrome Extension (Manifest V3) that detects video files (MP4, WebM, M3U8) from browser network requests and provides a clean UI for downloading.
+A powerful Chrome Extension that detects and downloads video files from web pages by monitoring browser network activity. Built using Manifest V3 and Chrome APIs, this project demonstrates real-world browser-level programming and event-driven architecture.
 
-## 🚀 How to Run
+---
 
-### Method 1: Automatic (MacOS)
-If you are on MacOS, you can run the following in your terminal from the project directory:
-```bash
-npm run run:chrome
+## 🚀 Features
+
+* 🔍 Detects video resources in real-time (MP4, WebM, M3U8)
+* 📥 Download videos directly from the browser
+* 🧠 Intelligent filtering of media requests
+* ⚡ Fast and lightweight extension
+* 📋 Displays detected videos in a clean popup UI
+* ♻️ Prevents duplicate entries
+* 🗑️ Clear all detected videos with one click
+
+---
+
+## 🛠️ Tech Stack
+
+* HTML5
+* CSS3
+* JavaScript (ES6)
+* Chrome Extension APIs (Manifest V3)
+
+  * chrome.webRequest
+  * chrome.downloads
+  * chrome.storage
+
+---
+
+## 🧩 How It Works
+
+1. The extension listens to browser network requests using the **WebRequest API**
+2. It filters video resources such as:
+
+   * `.mp4`
+   * `.webm`
+   * `.m3u8`
+3. Detected video URLs are stored using **Chrome Storage API**
+4. The popup UI dynamically displays detected videos
+5. Users can download videos using the **Downloads API**
+
+---
+
+## 📁 Project Structure
+
+```
+video-downloader-extension/
+│
+├── manifest.json        # Extension configuration
+├── background.js        # Detects video requests
+├── popup.html           # UI layout
+├── popup.js             # Handles UI logic
+├── style.css            # Styling
 ```
 
-### Method 2: Manual (Universal)
-1. Open **Chrome** and go to `chrome://extensions/`.
-2. Turn on **Developer mode** (top right).
-3. Click **Load unpacked**.
-4. Select this directory.
+---
 
-## 🛠 Features
-- Detects video URLs in real-time.
-- Supports `.mp4`, `.webm`, and detects `.m3u8` streams.
-- Persistent storage using `chrome.storage.local`.
-- Clean, modern UI with clear feedback.
-- Prevents duplicates and provides a "Clear All" option.
+## ⚙️ Installation (Run Locally)
 
-## ⚠️ Important Note
-- **YouTube Support**: Not included (per Chrome Extension policies).
-- **HLS Streams**: Detected but direct download is disabled as they require a muxer/special tool.
+1. Download or clone this repository
+2. Open Google Chrome and go to:
 
-## 📜 License
-This project is for educational purposes.
+   ```
+   chrome://extensions/
+   ```
+3. Enable **Developer Mode** (top right)
+4. Click **Load Unpacked**
+5. Select the project folder
+
+✅ Your extension is now ready to use!
+
+---
+
+## 🧪 Usage
+
+1. Open any website with video content
+2. Click on the extension icon
+3. View detected video links
+4. Click **Download** to save the video
+
+---
+
+## ⚠️ Limitations
+
+* ❌ Does not support YouTube downloads (Chrome policy)
+* ❌ Some DRM-protected videos cannot be downloaded
+* ⚠️ HLS (.m3u8) streams may require backend processing
+
+---
+
+## 🔮 Future Improvements
+
+* 🎯 Video quality selection (360p, 720p, 1080p)
+* 📊 Download progress indicator
+* 🎵 Convert video to audio (MP3)
+* 🧠 Backend integration using `yt-dlp`
+* 📂 Download history tracking
+* 🎨 Enhanced UI/UX
+
+---
+
+## 💡 Learning Outcomes
+
+* Understanding of browser internals
+* Working with Chrome Extension APIs
+* Event-driven programming
+* Real-time data handling
+* Building production-level tools
+
+---
+
+## 👨‍💻 Author
+
+**Ajuvaitha K**
+B.E CSE (IoT & Cyber Security)
+SNS College of Engineering
+
+---
+
+## ⭐ Support
+
+If you like this project, give it a ⭐ on GitHub!
+
+---
