@@ -92,12 +92,12 @@ video-downloader-extension/
 
 ## 🔮 Future Improvements
 
-* 🎯 Video quality selection (360p, 720p, 1080p)
-* 📊 Download progress indicator
-* 🎵 Convert video to audio (MP3)
-* 🧠 Backend integration using `yt-dlp`
-* 📂 Download history tracking
-* 🎨 Enhanced UI/UX
+*  1. Video quality selection (360p, 720p, 1080p)
+*  2. Download progress indicator
+*  3. Convert video to audio (MP3)
+*  4. Backend integration using `yt-dlp`
+*  5. Download history tracking
+*  6. Enhanced UI/UX
 
 ---
 
